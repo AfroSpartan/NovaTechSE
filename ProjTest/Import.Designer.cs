@@ -39,8 +39,10 @@
             // ImportList
             // 
             this.ImportList.FormattingEnabled = true;
+            this.ImportList.HorizontalScrollbar = true;
             this.ImportList.Location = new System.Drawing.Point(202, 70);
             this.ImportList.Name = "ImportList";
+            this.ImportList.ScrollAlwaysVisible = true;
             this.ImportList.Size = new System.Drawing.Size(521, 304);
             this.ImportList.TabIndex = 0;
             // 
@@ -90,9 +92,10 @@
             this.ImportDelete.Size = new System.Drawing.Size(75, 23);
             this.ImportDelete.TabIndex = 2;
             this.ImportDelete.Text = "Delete";
-            this.ImportDelete.MouseHover += new System.EventHandler(this.ImportDelete_Hover);
-            this.ImportDelete.MouseLeave += new System.EventHandler(this.ImportDelete_Leave);
             this.ImportDelete.UseVisualStyleBackColor = true;
+            this.ImportDelete.Click += new System.EventHandler(this.ImportDelete_Click);
+            this.ImportDelete.MouseLeave += new System.EventHandler(this.ImportDelete_Leave);
+            this.ImportDelete.MouseHover += new System.EventHandler(this.ImportDelete_Hover);
             // 
             // ImportWindow
             // 
