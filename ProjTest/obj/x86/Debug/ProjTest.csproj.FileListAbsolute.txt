@@ -17,3 +17,8 @@ C:\Users\AfroSpartan\Documents\GitHub\NovaTechSE\ProjTest\obj\x86\Debug\ProjTest
 C:\Users\AfroSpartan\Documents\GitHub\NovaTechSE\ProjTest\obj\x86\Debug\ProjTest.Properties.Resources.resources
 C:\Users\AfroSpartan\Documents\GitHub\NovaTechSE\ProjTest\obj\x86\Debug\ProjTest.SimpleWindow.resources
 C:\Users\AfroSpartan\Documents\GitHub\NovaTechSE\ProjTest\obj\x86\Debug\ProjTest.csproj.GenerateResource.Cache
+C:\Users\AfroSpartan\Documents\GitHub\NovaTechSE\ProjTest\obj\x86\Debug\ProjTest.OptionsWindow.resources
+E:\ProjTest\ProjTest\obj\x86\Debug\ProjTest.csprojResolveAssemblyReference.cache
+E:\ProjTest\ProjTest\obj\x86\Debug\ProjTest.OptionsWindow.resources
+E:\ProjTest\ProjTest\obj\x86\Debug\ProjTest.Login.resources
+C:\Users\AfroSpartan\Documents\GitHub\NovaTechSE\ProjTest\obj\x86\Debug\ProjTest.Login.resources

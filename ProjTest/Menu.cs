@@ -13,6 +13,7 @@ namespace ProjTest
     {
         public static ImportWindow ImportPage = new ImportWindow();
         public static SimpleWindow SimplePage = new SimpleWindow();
+        public static OptionsWindow OptionsPage = new OptionsWindow();
 
         public MenuWindow()
         {
@@ -29,14 +30,19 @@ namespace ProjTest
             SimplePage.Show();
         }
 
-        private void MenuComplex_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void MenuExit_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void MenuOptions_Click(object sender, EventArgs e)
+        {
+            OptionsPage.Show();
+        }
+
+        private void MenuWindow_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

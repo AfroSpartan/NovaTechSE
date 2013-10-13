@@ -53,7 +53,6 @@
             this.label1.Size = new System.Drawing.Size(186, 31);
             this.label1.TabIndex = 1;
             this.label1.Text = "Simple Orders";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // ExportButton
             // 

@@ -31,8 +31,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.MenuImport = new System.Windows.Forms.Button();
             this.MenuSimple = new System.Windows.Forms.Button();
-            this.MenuComplex = new System.Windows.Forms.Button();
             this.MenuExit = new System.Windows.Forms.Button();
+            this.Options = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -65,16 +65,6 @@
             this.MenuSimple.UseVisualStyleBackColor = true;
             this.MenuSimple.Click += new System.EventHandler(this.MenuSimple_Click);
             // 
-            // MenuComplex
-            // 
-            this.MenuComplex.Location = new System.Drawing.Point(58, 118);
-            this.MenuComplex.Name = "MenuComplex";
-            this.MenuComplex.Size = new System.Drawing.Size(75, 23);
-            this.MenuComplex.TabIndex = 3;
-            this.MenuComplex.Text = "Complex";
-            this.MenuComplex.UseVisualStyleBackColor = true;
-            this.MenuComplex.Click += new System.EventHandler(this.MenuComplex_Click);
-            // 
             // MenuExit
             // 
             this.MenuExit.Location = new System.Drawing.Point(58, 147);
@@ -85,18 +75,29 @@
             this.MenuExit.UseVisualStyleBackColor = true;
             this.MenuExit.Click += new System.EventHandler(this.MenuExit_Click);
             // 
-            // Menu
+            // Options
+            // 
+            this.Options.Location = new System.Drawing.Point(58, 118);
+            this.Options.Name = "MenuOptions";
+            this.Options.Size = new System.Drawing.Size(75, 23);
+            this.Options.TabIndex = 3;
+            this.Options.Text = "Options";
+            this.Options.UseVisualStyleBackColor = true;
+            this.Options.Click += new System.EventHandler(this.MenuOptions_Click);
+            // 
+            // MenuWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(200, 200);
+            this.ClientSize = new System.Drawing.Size(200, 184);
             this.Controls.Add(this.MenuExit);
-            this.Controls.Add(this.MenuComplex);
+            this.Controls.Add(this.Options);
             this.Controls.Add(this.MenuSimple);
             this.Controls.Add(this.MenuImport);
             this.Controls.Add(this.label1);
-            this.Name = "Menu";
+            this.Name = "MenuWindow";
             this.Text = "Menu";
+            this.Load += new System.EventHandler(this.MenuWindow_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -107,8 +108,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button MenuImport;
         private System.Windows.Forms.Button MenuSimple;
-        private System.Windows.Forms.Button MenuComplex;
         private System.Windows.Forms.Button MenuExit;
+        private System.Windows.Forms.Button Options;
     }
 }
 

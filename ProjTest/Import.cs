@@ -12,10 +12,10 @@ namespace ProjTest
     public partial class ImportWindow : Form
     {
 
+
         public string[,] ImportedArray;
         public string ImportedString;
         string[] lines;
-        
 
         public void ImportData()
         {
@@ -73,6 +73,7 @@ namespace ProjTest
         public ImportWindow()
         {
             InitializeComponent();
+            WindowResize();
         }
 
         private void ImportImport_Click(object sender, EventArgs e)
@@ -83,6 +84,11 @@ namespace ProjTest
         private void ImportExit_Click(object sender, EventArgs e)
         {
             Hide();
+        }
+
+        private void WindowResize()
+        {
+
         }
     }
 }

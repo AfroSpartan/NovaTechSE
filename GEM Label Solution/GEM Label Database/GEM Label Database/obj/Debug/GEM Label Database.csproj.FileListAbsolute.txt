@@ -1,0 +1,11 @@
+C:\Users\AfroSpartan\Documents\GitHub\NovaTechSE\GEM Label Solution\GEM Label Database\GEM Label Database\bin\Debug\GEM Label Database.exe.config
+C:\Users\AfroSpartan\Documents\GitHub\NovaTechSE\GEM Label Solution\GEM Label Database\GEM Label Database\bin\Debug\GEM Label Database.exe
+C:\Users\AfroSpartan\Documents\GitHub\NovaTechSE\GEM Label Solution\GEM Label Database\GEM Label Database\bin\Debug\GEM Label Database.pdb
+C:\Users\AfroSpartan\Documents\GitHub\NovaTechSE\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM Label Database.csprojResolveAssemblyReference.cache
+C:\Users\AfroSpartan\Documents\GitHub\NovaTechSE\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.MenuWindow.resources
+C:\Users\AfroSpartan\Documents\GitHub\NovaTechSE\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.Properties.Resources.resources
+C:\Users\AfroSpartan\Documents\GitHub\NovaTechSE\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM Label Database.csproj.GenerateResource.Cache
+C:\Users\AfroSpartan\Documents\GitHub\NovaTechSE\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM Label Database.exe
+C:\Users\AfroSpartan\Documents\GitHub\NovaTechSE\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM Label Database.pdb
+C:\Users\AfroSpartan\Documents\GitHub\NovaTechSE\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.LoginWindow.resources
+C:\Users\AfroSpartan\Documents\GitHub\NovaTechSE\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.OptionsWindow.resources

@@ -34,6 +34,8 @@
             this.ImportSort = new System.Windows.Forms.Button();
             this.ImportExit = new System.Windows.Forms.Button();
             this.ImportDelete = new System.Windows.Forms.Button();
+            this.WHeight = new System.Windows.Forms.Label();
+            this.WWidth = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // ImportList
@@ -97,11 +99,31 @@
             this.ImportDelete.MouseLeave += new System.EventHandler(this.ImportDelete_Leave);
             this.ImportDelete.MouseHover += new System.EventHandler(this.ImportDelete_Hover);
             // 
+            // WHeight
+            // 
+            this.WHeight.AutoSize = true;
+            this.WHeight.Location = new System.Drawing.Point(59, 154);
+            this.WHeight.Name = "WHeight";
+            this.WHeight.Size = new System.Drawing.Size(35, 13);
+            this.WHeight.TabIndex = 3;
+            this.WHeight.Text = "label2";
+            // 
+            // WWidth
+            // 
+            this.WWidth.AutoSize = true;
+            this.WWidth.Location = new System.Drawing.Point(18, 154);
+            this.WWidth.Name = "WWidth";
+            this.WWidth.Size = new System.Drawing.Size(35, 13);
+            this.WWidth.TabIndex = 4;
+            this.WWidth.Text = "label3";
+            // 
             // ImportWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(735, 386);
+            this.Controls.Add(this.WWidth);
+            this.Controls.Add(this.WHeight);
             this.Controls.Add(this.ImportExit);
             this.Controls.Add(this.ImportDelete);
             this.Controls.Add(this.ImportSort);
@@ -123,5 +145,7 @@
         private System.Windows.Forms.Button ImportSort;
         private System.Windows.Forms.Button ImportExit;
         private System.Windows.Forms.Button ImportDelete;
+        private System.Windows.Forms.Label WHeight;
+        private System.Windows.Forms.Label WWidth;
     }
 }

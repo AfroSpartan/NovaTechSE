@@ -16,11 +16,6 @@ namespace ProjTest
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void SimpleExit_Click(object sender, EventArgs e)
         {
             Hide();
