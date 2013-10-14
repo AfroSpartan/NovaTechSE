@@ -14,8 +14,8 @@ namespace GEM_Label_Database
     public partial class MenuWindow : Form
     {
         public string who = "";
-        LoginWindow LoginW = new LoginWindow();
-        ImportWindow ImportW = new ImportWindow();
+        public LoginWindow LoginW = new LoginWindow();
+        public ImportWindow ImportW = new ImportWindow();
 
         public MenuWindow()
         {
