@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuWindow));
             this.label1 = new System.Windows.Forms.Label();
             this.MenuImport = new System.Windows.Forms.Button();
-            this.MenuSimple = new System.Windows.Forms.Button();
+            this.MenuPrint = new System.Windows.Forms.Button();
             this.MenuExit = new System.Windows.Forms.Button();
             this.Options = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -43,7 +43,7 @@
             this.label1.Location = new System.Drawing.Point(59, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 32);
-            this.label1.TabIndex = 2;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Menu";
             // 
             // MenuImport
@@ -51,27 +51,27 @@
             this.MenuImport.Location = new System.Drawing.Point(58, 60);
             this.MenuImport.Name = "MenuImport";
             this.MenuImport.Size = new System.Drawing.Size(75, 23);
-            this.MenuImport.TabIndex = 3;
+            this.MenuImport.TabIndex = 0;
             this.MenuImport.Text = "Import";
             this.MenuImport.UseVisualStyleBackColor = true;
             this.MenuImport.Click += new System.EventHandler(this.MenuImport_Click);
             // 
-            // MenuSimple
+            // MenuPrint
             // 
-            this.MenuSimple.Location = new System.Drawing.Point(58, 89);
-            this.MenuSimple.Name = "MenuSimple";
-            this.MenuSimple.Size = new System.Drawing.Size(75, 23);
-            this.MenuSimple.TabIndex = 3;
-            this.MenuSimple.Text = "Simple";
-            this.MenuSimple.UseVisualStyleBackColor = true;
-            this.MenuSimple.Click += new System.EventHandler(this.MenuSimple_Click);
+            this.MenuPrint.Location = new System.Drawing.Point(58, 89);
+            this.MenuPrint.Name = "MenuPrint";
+            this.MenuPrint.Size = new System.Drawing.Size(75, 23);
+            this.MenuPrint.TabIndex = 2;
+            this.MenuPrint.Text = "Print";
+            this.MenuPrint.UseVisualStyleBackColor = true;
+            this.MenuPrint.Click += new System.EventHandler(this.MenuSimple_Click);
             // 
             // MenuExit
             // 
             this.MenuExit.Location = new System.Drawing.Point(58, 147);
             this.MenuExit.Name = "MenuExit";
             this.MenuExit.Size = new System.Drawing.Size(75, 23);
-            this.MenuExit.TabIndex = 3;
+            this.MenuExit.TabIndex = 4;
             this.MenuExit.Text = "Exit";
             this.MenuExit.UseVisualStyleBackColor = true;
             this.MenuExit.Click += new System.EventHandler(this.MenuExit_Click);
@@ -93,7 +93,7 @@
             this.ClientSize = new System.Drawing.Size(200, 184);
             this.Controls.Add(this.MenuExit);
             this.Controls.Add(this.Options);
-            this.Controls.Add(this.MenuSimple);
+            this.Controls.Add(this.MenuPrint);
             this.Controls.Add(this.MenuImport);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -110,7 +110,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button MenuImport;
-        private System.Windows.Forms.Button MenuSimple;
+        private System.Windows.Forms.Button MenuPrint;
         private System.Windows.Forms.Button MenuExit;
         private System.Windows.Forms.Button Options;
     }

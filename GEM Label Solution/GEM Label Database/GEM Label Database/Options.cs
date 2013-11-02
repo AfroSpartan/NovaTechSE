@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.IO;
 
 namespace GEM_Label_Database
 {
@@ -18,6 +19,9 @@ namespace GEM_Label_Database
         string accountMode = "";
         public ArrayList userAccounts = new ArrayList();
         public ArrayList passAccounts = new ArrayList();
+        public string accountSource = System.IO.Path.GetDirectoryName(Application.ExecutablePath.ToString() + "\\Accounts.txt");
+        public string accountTarget = System.IO.Path.GetDirectoryName(Application.ExecutablePath.ToString() + "\\Accounts.txt");
+        public string[] accountLines;
         
         //Init OptionsWindow
         public OptionsWindow()
@@ -32,10 +36,6 @@ namespace GEM_Label_Database
             AccountNameLabel.Hide();
             RetypePasswordLabel.Hide();
             RetypePassword.Hide();
-            for (int i = 0; i < userAccounts.Count; i++)
-            {
-                AccountList.Items.Add(userAccounts[i].ToString());
-            }
         }
         //When user clicks Edit Accounts open the accounts editting interface
         private void EditAccount_Click(object sender, EventArgs e)
@@ -120,6 +120,38 @@ namespace GEM_Label_Database
                         AccountNameLabel.Hide();
                         RetypePasswordLabel.Hide();
                         RetypePassword.Hide();
+
+                        string lineToWrite = null;
+                        using (StreamReader reader = new StreamReader(accountSource))
+                        {
+                            int lineToEdit = File.ReadAllLines(accountSource).Count() + 1;
+                            for (int i = 1; i <= lineToEdit; ++i)
+                            lineToWrite = reader.ReadLine();
+                        }
+
+                        if (lineToWrite == null)
+                            throw new InvalidDataException("Line does not exist in " + accountSource);
+
+                        // Read the old file.
+                        string[] lines = File.ReadAllLines(accountTarget);
+
+                        // Write the new file over the old file.
+                        using (StreamWriter writer = new StreamWriter(accountTarget))
+                        {
+                            int lineToEdit = File.ReadAllLines(accountSource).Count() + 1;
+                            for (int currentLine = 1; currentLine <= lines.Length; ++currentLine)
+                            {
+                                if (currentLine == lineToEdit)
+                                {
+                                    writer.WriteLine(lineToWrite);
+                                }
+                                else
+                                {
+                                    writer.WriteLine(lines[currentLine - 1]);
+                                }
+                            }
+                        }
+
                     }
                     else
                     {
