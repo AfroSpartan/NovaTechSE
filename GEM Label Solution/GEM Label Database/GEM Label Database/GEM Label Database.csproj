@@ -42,8 +42,22 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Draggable.cs" />
+    <Compile Include="MouseTransparentLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MouseTransparentLabel.Designer.cs">
+      <DependentUpon>MouseTransparentLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MouseTransparentPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MouseTransparentPanel.Designer.cs">
+      <DependentUpon>MouseTransparentPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Print.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +134,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Splash.resx">
       <DependentUpon>Splash.cs</DependentUpon>
@@ -192,6 +207,22 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GEM ICON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Close Button Hover.png" />
+    <Content Include="Resources\Close Button.png" />
+    <Content Include="Resources\Left Arrow Hover.png" />
+    <Content Include="Resources\Left Arrow.png" />
+    <Content Include="Resources\Maximize Button Hover.png" />
+    <Content Include="Resources\Maximize Button.png" />
+    <Content Include="Resources\Right Arrow Hover.png" />
+    <Content Include="Resources\Right Arrow.png" />
+    <None Include="Resources\Minimize Button Hover.png" />
+    <None Include="Resources\Minimize Button.png" />
+    <None Include="Resources\HSplitter.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

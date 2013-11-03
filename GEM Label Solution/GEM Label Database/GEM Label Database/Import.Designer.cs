@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ImportWindow));
-            this.label1 = new System.Windows.Forms.Label();
+            this.label1 = new MouseTransparentLabel();
             this.ImportSelect = new System.Windows.Forms.Button();
             this.ImportImport = new System.Windows.Forms.Button();
             this.ImportExit = new System.Windows.Forms.Button();
             this.ImportDelete = new System.Windows.Forms.Button();
-            this.WHeight = new System.Windows.Forms.Label();
+            this.WHeight = new MouseTransparentLabel();
             this.ImportList = new System.Windows.Forms.DataGridView();
             this.Tables = new System.Windows.Forms.TabControl();
             this.ImportedTab = new System.Windows.Forms.TabPage();
@@ -42,7 +42,7 @@
             this.SimpleList = new System.Windows.Forms.DataGridView();
             this.ComplexTab = new System.Windows.Forms.TabPage();
             this.ComplexList = new System.Windows.Forms.DataGridView();
-            this.WWidth = new System.Windows.Forms.Label();
+            this.WWidth = new MouseTransparentLabel();
             this.ImportPrint = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ImportList)).BeginInit();
             this.Tables.SuspendLayout();
@@ -233,12 +233,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private MouseTransparentLabel label1;
         private System.Windows.Forms.Button ImportSelect;
         private System.Windows.Forms.Button ImportImport;
         private System.Windows.Forms.Button ImportExit;
         private System.Windows.Forms.Button ImportDelete;
-        private System.Windows.Forms.Label WHeight;
+        private MouseTransparentLabel WHeight;
         private System.Windows.Forms.DataGridView ImportList;
         private System.Windows.Forms.TabControl Tables;
         private System.Windows.Forms.TabPage SimpleTab;
@@ -246,7 +246,7 @@
         private System.Windows.Forms.TabPage ComplexTab;
         private System.Windows.Forms.DataGridView SimpleList;
         private System.Windows.Forms.DataGridView ComplexList;
-        private System.Windows.Forms.Label WWidth;
+        private MouseTransparentLabel WWidth;
         private System.Windows.Forms.Button ImportPrint;
     }
 }

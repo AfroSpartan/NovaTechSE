@@ -60,3 +60,7 @@ C:\Users\AfroSpartan\Documents\GEM Label Solution\GEM Label Database\GEM Label D
 C:\Users\AfroSpartan\Documents\GitHub\NovaTechSE\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\Interop.ADODB.dll
 C:\Users\AfroSpartan\Documents\GitHub\NovaTechSE\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\Interop.Microsoft.Office.Core.dll
 C:\Users\AfroSpartan\Documents\GitHub\NovaTechSE\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM Label Database.csproj.ResolveComReference.cache
+C:\Users\AfroSpartan\Documents\GitHub\NovaTechSE\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.Debug.resources
+C:\Users\AfroSpartan\Documents\GitHub\NovaTechSE\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.ImportWindow.resources
+C:\Users\AfroSpartan\Documents\GitHub\NovaTechSE\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.PrintWindow.resources
+C:\Users\AfroSpartan\Documents\GitHub\NovaTechSE\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.Splash.resources
