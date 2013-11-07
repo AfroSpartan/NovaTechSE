@@ -46,6 +46,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Draggable.cs" />
+    <Compile Include="ExportSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExportSettings.Designer.cs">
+      <DependentUpon>ExportSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="MouseTransparentLabel.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Debug.resx">
       <DependentUpon>Debug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExportSettings.resx">
+      <DependentUpon>ExportSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Import.resx">
       <DependentUpon>Import.cs</DependentUpon>
@@ -212,6 +221,7 @@
     <None Include="Resources\GEM ICON.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="bin\Debug\Graphics\RM_delivered_by_165x165_0.jpg" />
     <Content Include="Resources\Close Button Hover.png" />
     <Content Include="Resources\Close Button.png" />
     <Content Include="Resources\Left Arrow Hover.png" />

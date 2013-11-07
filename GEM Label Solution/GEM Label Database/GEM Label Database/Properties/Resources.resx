@@ -127,25 +127,28 @@
   <data name="Maximize Button Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Maximize Button Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Close Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Close Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="HSplitter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HSplitter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GEM ICON" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GEM ICON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Maximize Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Maximize Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Minimize Button Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Minimize Button Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Right Arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Right Arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Close Button Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Close Button Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Close Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Close Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Maximize Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Maximize Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Right Arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Right Arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="RM_delivered_by_165x165_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Graphics\RM_delivered_by_165x165_0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

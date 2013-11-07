@@ -36,7 +36,6 @@ G:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_
 G:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.Properties.Resources.resources
 G:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM Label Database.csproj.GenerateResource.Cache
 E:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\Interop.ADODB.dll
-E:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\Interop.Office.dll
 E:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM Label Database.csproj.ResolveComReference.cache
 E:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.PrintWindow.resources
 C:\Users\AfroSpartan\Documents\GEM Label Solution\GEM Label Database\GEM Label Database\bin\Debug\GEM Label Database.exe.config
@@ -64,3 +63,32 @@ C:\Users\AfroSpartan\Documents\GitHub\NovaTechSE\GEM Label Solution\GEM Label Da
 C:\Users\AfroSpartan\Documents\GitHub\NovaTechSE\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.ImportWindow.resources
 C:\Users\AfroSpartan\Documents\GitHub\NovaTechSE\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.PrintWindow.resources
 C:\Users\AfroSpartan\Documents\GitHub\NovaTechSE\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.Splash.resources
+G:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\Interop.ADODB.dll
+G:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\Interop.Office.dll
+G:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM Label Database.csproj.ResolveComReference.cache
+G:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.PrintWindow.resources
+G:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.Splash.resources
+E:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.Splash.resources
+C:\Users\AfroSpartan\bakup\GEM Label Solution\GEM Label Database\GEM Label Database\bin\Debug\GEM Label Database.exe.config
+C:\Users\AfroSpartan\bakup\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\Interop.ADODB.dll
+C:\Users\AfroSpartan\bakup\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\Interop.Microsoft.Office.Core.dll
+C:\Users\AfroSpartan\bakup\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM Label Database.csproj.ResolveComReference.cache
+C:\Users\AfroSpartan\bakup\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM Label Database.exe
+C:\Users\AfroSpartan\bakup\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM Label Database.pdb
+C:\Users\AfroSpartan\bakup\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM Label Database.csprojResolveAssemblyReference.cache
+C:\Users\AfroSpartan\bakup\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.Debug.resources
+C:\Users\AfroSpartan\bakup\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.ImportWindow.resources
+C:\Users\AfroSpartan\bakup\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.PrintWindow.resources
+C:\Users\AfroSpartan\bakup\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.LoginWindow.resources
+C:\Users\AfroSpartan\bakup\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.MenuWindow.resources
+C:\Users\AfroSpartan\bakup\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.OptionsWindow.resources
+C:\Users\AfroSpartan\bakup\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.Properties.Resources.resources
+C:\Users\AfroSpartan\bakup\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.Splash.resources
+C:\Users\AfroSpartan\bakup\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM Label Database.csproj.GenerateResource.Cache
+F:\GEM Label Solution\GEM Label Database\GEM Label Database\bin\Debug\GEM Label Database.exe.config
+F:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\Interop.ADODB.dll
+F:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\Interop.Office.dll
+F:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM Label Database.csproj.ResolveComReference.cache
+F:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM Label Database.exe
+E:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.ExportSettings.resources
+E:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\Interop.Microsoft.Office.Core.dll

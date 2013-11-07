@@ -17,15 +17,22 @@ namespace GEM_Label_Database
 {
     public partial class ImportWindow : Form
     {
+        private bool exported = false;
+        private bool closeHover = false;
+        private bool maximizeHover = false;
+        private bool minimizeHover = false;
+        private bool exportHover = false;
+        private bool selectHover = false;
+        private bool maximized = false;
         public bool print = false;
         public bool imported;
         public string[,] ImportedArray;
         public string ImportedString;
         public string[] lines;
-        public string[,] sortedlines = new string[1000000,24];
+        public string[,] sortedlines = new string[1000000, 24];
         public string[] line;
         public bool colNull = false;
-        public int colSize = 0 ;
+        public int colSize = 0;
         char[] delimiters = new char[] { '\t' };
         DataTable dt = new DataTable();
         DataTable sqt = new DataTable();
@@ -100,9 +107,9 @@ namespace GEM_Label_Database
                 //    }
                 //}
 
-                for(int i = 0; i < 24; i++)
+                for (int i = 0; i < 24; i++)
                 {
-                    dt.Columns.Add(sortedlines[0,i], Type.GetType("System.String"));
+                    dt.Columns.Add(sortedlines[0, i], Type.GetType("System.String"));
                 }
 
                 for (int i = 1; i < colSize; i++)
@@ -114,7 +121,7 @@ namespace GEM_Label_Database
                     }
                 }
 
-                for (int i = 0; i < colSize; i++ )
+                for (int i = 0; i < colSize; i++)
                 {
                     for (int o = 0; o < 24; o++)
                     {
@@ -134,16 +141,6 @@ namespace GEM_Label_Database
                 //    }
                 //}
             }
-        }
-
-        public void ImportDelete_Hover(object sender, EventArgs e)
-        {
-            ImportDelete.ForeColor = Color.FromName("red");
-        }
-
-        public void ImportDelete_Leave(object sender, EventArgs e)
-        {
-            ImportDelete.ForeColor = Color.FromName("none");
         }
 
         public void ImportDelete_Click(object sender, EventArgs e)
@@ -167,21 +164,12 @@ namespace GEM_Label_Database
         {
             InitializeComponent();
             WindowResize();
+            this.Draggable(true);
         }
 
         private void ImportSelect_Click(object sender, EventArgs e)
         {
-            ImportData();
-        }
-
-        private void ImportExit_Click(object sender, EventArgs e)
-        {
-            MenuWindow MenuW = new MenuWindow();
-            userclosing = true;
-            this.Close();
-            MenuW.Show();
-            MenuW.SetPos(this.Left, this.Top);
-            MenuW.imported = imported;
+            
         }
 
         private void WindowResize()
@@ -202,8 +190,11 @@ namespace GEM_Label_Database
             null, oApp, oRunArgs);
         }
 
-        private void ImportImport_Click(object sender, EventArgs e)
+        #region "Appearance and Buttons"
+
+        private void Select_Click(object sender, EventArgs e)
         {
+            ImportData();
             if (dt.Rows.Count != 0)
             {
                 OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\Database8.accdb");
@@ -268,29 +259,29 @@ namespace GEM_Label_Database
                 {
                     if (d.ErrorCode == -2147217900 || d.ErrorCode == 3010 || d.ErrorCode == 3012)
                     {
-                    OleDbCommand delete = new OleDbCommand("DROP TABLE [pImport]", con);
-                    delete.ExecuteNonQuery();
-                    create.ExecuteNonQuery();
-                    //for (int i = 1; i < colSize; i++)
-                    //{
-                    //    string addlines = "INSERT INTO pImport("+ columns +" VALUES(";
-                    //    for (int o = 0; o < 24; o++)
-                    //    {
-                    //        addlines = addlines + "[" + sortedlines[i, o] + "]";
-                    //        if (o < 23)
-                    //        {
-                    //            addlines = addlines + ", ";
-                    //        }
-                    //        else
-                    //        {
-                    //            addlines = addlines + ")";
-                    //        }
-                    //    }
-                    //    MessageBox.Show(addlines);
-                    //    OleDbCommand insert = new OleDbCommand(addlines, con);
-                    //    insert.ExecuteNonQuery();
-                    //}
-                    con.Close();
+                        OleDbCommand delete = new OleDbCommand("DROP TABLE [pImport]", con);
+                        delete.ExecuteNonQuery();
+                        create.ExecuteNonQuery();
+                        //for (int i = 1; i < colSize; i++)
+                        //{
+                        //    string addlines = "INSERT INTO pImport("+ columns +" VALUES(";
+                        //    for (int o = 0; o < 24; o++)
+                        //    {
+                        //        addlines = addlines + "[" + sortedlines[i, o] + "]";
+                        //        if (o < 23)
+                        //        {
+                        //            addlines = addlines + ", ";
+                        //        }
+                        //        else
+                        //        {
+                        //            addlines = addlines + ")";
+                        //        }
+                        //    }
+                        //    MessageBox.Show(addlines);
+                        //    OleDbCommand insert = new OleDbCommand(addlines, con);
+                        //    insert.ExecuteNonQuery();
+                        //}
+                        con.Close();
                     }
                 }
                 OleDbDataAdapter adapter = new OleDbDataAdapter();
@@ -331,7 +322,6 @@ namespace GEM_Label_Database
                 }
                 catch (OleDbException ex)
                 {
-                    MessageBox.Show(ex.Message +"\n"+ex.ErrorCode, "OleDbExeption Error");
                     if (ex.ErrorCode == -2147217900 || ex.ErrorCode == 3010 || ex.ErrorCode == 3012)
                     {
                         if (con.State.ToString() != "Open")
@@ -349,6 +339,8 @@ namespace GEM_Label_Database
                         SimpleList.DataSource = sqt;
                         ComplexList.DataSource = cqt;
                     }
+                    else
+                        MessageBox.Show(ex.Message + "\n" + ex.ErrorCode, "OleDbExeption Error");
                 }
                 catch (Exception x)
                 {
@@ -364,7 +356,7 @@ namespace GEM_Label_Database
                     Access.ApplicationClass oAccess = new Access.ApplicationClass();
                     oAccess.Visible = true;
                     oAccess.OpenCurrentDatabase(System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\Database8.accdb", false, "");
-                    MessageBox.Show(System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\Database8.accdb");
+                    //MessageBox.Show(System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\Database8.accdb");
                     RunMacro(oAccess, new Object[] { "TestMacro" });
                     oAccess.DoCmd.Quit(Access.AcQuitOption.acQuitSaveNone);
                 }
@@ -381,7 +373,7 @@ namespace GEM_Label_Database
 
                 }
                 //System.Diagnostics.Process.Start("E:\\GEM Label Solution\\GEM Label Database\\GEM Label Database\\bin\\Debug\\ImportToDatabase.bat");
-                imported = true;                
+                imported = true;
             }
             else
             {
@@ -389,7 +381,25 @@ namespace GEM_Label_Database
             }
         }
 
-        private void ImportPrint_Click(object sender, EventArgs e)
+        private void Select_Hover(object sender, EventArgs e)
+        {
+            if (selectHover == false)
+            {
+                selectHover = true;
+                this.SelectFilePanel.BackColor = Color.LightGray;
+            }
+        }
+
+        private void Select_Leave(object sender, EventArgs e)
+        {
+            if (selectHover == true)
+            {
+                selectHover = false;
+                this.SelectFilePanel.BackColor = Color.Transparent;
+            }
+        }
+
+        private void Export_Click(object sender, EventArgs e)
         {
             print = true;
             PrintWindow PrintW = new PrintWindow();
@@ -398,5 +408,109 @@ namespace GEM_Label_Database
             PrintW.imported = imported;
             this.Close();
         }
+
+        private void Export_Hover(object sender, EventArgs e)
+        {
+            if (exportHover == false)
+            {
+                exportHover = true;
+                this.ExportPanel.BackColor = Color.LightGray;
+            }
+        }
+
+        private void Export_Leave(object sender, EventArgs e)
+        {
+            if (exportHover == true)
+            {
+                exportHover = false;
+                this.ExportPanel.BackColor = Color.Transparent;
+            }
+        }
+
+        private void Close_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Close_Hover(object sender, EventArgs e)
+        {
+            if (closeHover == false)
+            {
+                closeHover = true;
+                this.ClosePanel.BackColor = Color.Red;
+                this.ClosePanel.BackgroundImage = System.Drawing.Image.FromFile(System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\Graphics\\Close Button Hover.png");
+            }
+        }
+
+        private void Close_Leave(object sender, EventArgs e)
+        {
+            if (closeHover == true)
+            {
+                closeHover = false;
+                this.ClosePanel.BackColor = Color.Transparent;
+                this.ClosePanel.BackgroundImage = System.Drawing.Image.FromFile(System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\Graphics\\Close Button.png");
+            }
+        }
+
+        private void Minimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void Minimize_Hover(object sender, EventArgs e)
+        {
+            if (minimizeHover == false)
+            {
+                minimizeHover = true;
+                this.MinimizePanel.BackColor = Color.LightGray;
+                this.MinimizePanel.BackgroundImage = System.Drawing.Image.FromFile(System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\Graphics\\Minimize Button Hover.png");
+            }
+        }
+
+        private void Minimize_Leave(object sender, EventArgs e)
+        {
+            if (minimizeHover == true)
+            {
+                minimizeHover = false;
+                this.MinimizePanel.BackColor = Color.Transparent;
+                this.MinimizePanel.BackgroundImage = System.Drawing.Image.FromFile(System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\Graphics\\Minimize Button.png");
+            }
+        }
+
+        private void Maximize_Click(object sender, EventArgs e)
+        {
+            if (maximized == false)
+            {
+                maximized = true;
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                maximized = false;
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void Maximize_Hover(object sender, EventArgs e)
+        {
+            if (maximizeHover == false)
+            {
+                maximizeHover = true;
+                this.MaximizePanel.BackColor = Color.LightGray;
+                this.MaximizePanel.BackgroundImage = System.Drawing.Image.FromFile(System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\Graphics\\Maximize Button Hover.png");
+            }
+        }
+
+        private void Maximize_Leave(object sender, EventArgs e)
+        {
+            if (maximizeHover == true)
+            {
+                maximizeHover = false;
+                this.MaximizePanel.BackColor = Color.Transparent;
+                this.MaximizePanel.BackgroundImage = System.Drawing.Image.FromFile(System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\Graphics\\Maximize Button.png");
+            }
+        }
+
+        #endregion
     }
 }
