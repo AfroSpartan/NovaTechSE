@@ -92,3 +92,19 @@ F:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM Label 
 F:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM Label Database.exe
 E:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.ExportSettings.resources
 E:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\Interop.Microsoft.Office.Core.dll
+F:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM Label Database.pdb
+F:\GEM Label Solution\GEM Label Database\GEM Label Database\bin\Debug\GEM Label Database.exe
+F:\GEM Label Solution\GEM Label Database\GEM Label Database\bin\Debug\GEM Label Database.pdb
+F:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM Label Database.csprojResolveAssemblyReference.cache
+F:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.Debug.resources
+F:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.ExportSettings.resources
+F:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.ImportWindow.resources
+F:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.PrintWindow.resources
+F:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.LoginWindow.resources
+F:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.MenuWindow.resources
+F:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.OptionsWindow.resources
+F:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.Properties.Resources.resources
+F:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.Splash.resources
+F:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM Label Database.csproj.GenerateResource.Cache
+F:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.ExportSearch.resources
+E:\GEM Label Solution\GEM Label Database\GEM Label Database\obj\Debug\GEM_Label_Database.ExportSearch.resources

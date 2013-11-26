@@ -35,7 +35,7 @@ namespace GEM_Label_Database
         public int YPos;
         public int XPos;
         public bool imported;
-        int row = 0;
+        public int row = 0;
         int weight;
         bool userclosing = false;
         string[] line3 = new string[2];
@@ -89,6 +89,7 @@ namespace GEM_Label_Database
             //this.PrintLabel.BackColor = Color.Transparent;
             //this.PrintAllLabel.BackColor = Color.Transparent;
             this.Draggable(true);
+            this.GEMCodeList.Visible = false;
         }
 
         private void Check_AddLine3()
@@ -163,9 +164,9 @@ namespace GEM_Label_Database
         {
             OrderIDPLabel.Text = dt.Rows[row][0].ToString();
             CustomerPLabel.Text = (dt.Rows[row][5].ToString() + "   (" + dt.Rows[row][1].ToString() + ")").ToUpper();
-            AddressLine1PLabel.Text = (dt.Rows[row][6].ToString()).ToUpper();
-            AddressLine2PLabel.Text = (dt.Rows[row][7].ToString()).ToUpper();
-            AddressLine3PLabel.Text = (dt.Rows[row][8].ToString()).ToUpper();
+            AddressLine1PLabel.Text = (dt.Rows[row][6].ToString()).ToUpper().Replace(',', ' ');
+            AddressLine2PLabel.Text = (dt.Rows[row][7].ToString()).ToUpper().Replace(',', ' ');
+            AddressLine3PLabel.Text = (dt.Rows[row][8].ToString()).ToUpper().Replace(',', ' ');
             CityPLabel.Text = (dt.Rows[row][9].ToString()).ToUpper();
             PostcodePLabel.Text = (dt.Rows[row][11].ToString()).ToUpper();
         }
@@ -200,6 +201,13 @@ namespace GEM_Label_Database
             else
             {
                 empty = false;
+            }
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                if(!this.GEMCodeList.Items.Contains(dt.Rows[i][1]))
+                {
+                    this.GEMCodeList.Items.Add(dt.Rows[i][1]);
+                }
             }
         }
 
@@ -262,7 +270,7 @@ namespace GEM_Label_Database
                 dt.Rows[row][10] = StateCounty.Text;
                 dt.Rows[row][11] = Postcode.Text;
                 dt.Rows[row][12] = Country.Text;
-                string updateTable = "UPDATE simpleTable SET [buyer-name]='" + dt.Rows[row][5].ToString() + "', [ship-address-1]='" + dt.Rows[row][6].ToString() + "', [ship-address-2]='" + dt.Rows[row][7].ToString() + "', [ship-address-3]='" + dt.Rows[row][8].ToString() + "', [ship-city]='" + dt.Rows[row][9].ToString() + "', [ship-state]='" + dt.Rows[row][10].ToString() + "', [ship-postal-code]='" + dt.Rows[row][11].ToString() + "', [ship-country]='" + dt.Rows[row][12].ToString() + "' WHERE [order-id] ='" + dt.Rows[row][0].ToString() + "';";
+                string updateTable = "UPDATE simpleTable SET [recipient-name]='" + dt.Rows[row][5].ToString() + "', [ship-address-1]='" + dt.Rows[row][6].ToString() + "', [ship-address-2]='" + dt.Rows[row][7].ToString() + "', [ship-address-3]='" + dt.Rows[row][8].ToString() + "', [ship-city]='" + dt.Rows[row][9].ToString() + "', [ship-state]='" + dt.Rows[row][10].ToString() + "', [ship-postal-code]='" + dt.Rows[row][11].ToString() + "', [ship-country]='" + dt.Rows[row][12].ToString() + "' WHERE [order-id] ='" + dt.Rows[row][0].ToString() + "';";
                 OleDbCommand update = new OleDbCommand(updateTable, con);
                 try
                 {
@@ -682,16 +690,37 @@ namespace GEM_Label_Database
         {
             Thread clickColor = new Thread(new ThreadStart(Search_Click_Color));
             clickColor.Start();
-            MessageBox.Show(SearchCategory.Text + "\t" + Search.Text);
+            int amount = 0;
             if (SearchCategory.Text == "Customer Name")
             {
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {
                     if (dt.Rows[i][5].ToString().Contains(Search.Text.ToString()))
                     {
-                        row = i;
-                        Update_Record(0);
-                        break;
+                        amount++;
+                    }
+                }
+                if (amount > 1)
+                {
+                    using (ExportSearch searchW = new ExportSearch())
+                    {
+                        this.Hide();
+                        searchW.search = GEMCodeList.Text;
+                        searchW.cat = SearchCategory.Text;
+                        searchW.AfterInit();
+                        searchW.ShowDialog(this);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < dt.Rows.Count; i++)
+                    {
+                        if (dt.Rows[i][5].ToString().Contains(Search.Text.ToString()))
+                        {
+                            row = i;
+                            Update_Record(0);
+                            break;
+                        }
                     }
                 }
             }
@@ -699,12 +728,44 @@ namespace GEM_Label_Database
             {
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {
-                    if (dt.Rows[i][0].ToString().Contains(Search.Text.ToString()))
+                    if (dt.Rows[i][5].ToString().Contains(Search.Text.ToString()))
                     {
-                        row = i;
-                        Update_Record(0);
-                        break;
+                        amount++;
                     }
+                }
+                if (amount > 1)
+                {
+                    using (ExportSearch searchW = new ExportSearch())
+                    {
+                        this.Hide();
+                        searchW.search = GEMCodeList.Text;
+                        searchW.cat = SearchCategory.Text;
+                        searchW.AfterInit();
+                        searchW.ShowDialog(this);
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < dt.Rows.Count; i++)
+                    {
+                        if (dt.Rows[i][0].ToString().Contains(Search.Text.ToString()))
+                        {
+                            row = i;
+                            Update_Record(0);
+                            break;
+                        }
+                    }
+                }
+            }
+            if (SearchCategory.Text == "GEM Code")
+            {
+                using (ExportSearch searchW = new ExportSearch())
+                {
+                    this.Hide();
+                    searchW.search = GEMCodeList.Text;
+                    searchW.cat = SearchCategory.Text;
+                    searchW.AfterInit();
+                    searchW.ShowDialog(this);
                 }
             }
         }
@@ -729,9 +790,28 @@ namespace GEM_Label_Database
             }
         }
 
+        private void Search_Category_Update(object sender, EventArgs e)
+        {
+            if (SearchCategory.Text == "Order ID" || SearchCategory.Text == "Customer Name")
+            {
+                this.Search.Visible = true;
+                this.GEMCodeList.Visible = false;
+            }
+            if (SearchCategory.Text == "GEM Code")
+            {
+                this.Search.Visible = false;
+                this.GEMCodeList.Visible = true;
+            }
+        }
+
         #endregion
 
-
+        public void setRow(int sentrow)
+        {
+            this.Show();
+            row = sentrow;
+            Update_Record(0);
+        }
         
 
     }

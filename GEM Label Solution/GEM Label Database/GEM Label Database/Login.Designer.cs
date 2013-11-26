@@ -52,10 +52,10 @@
             // Loginlabel
             // 
             this.Loginlabel.AutoSize = true;
-            this.Loginlabel.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Loginlabel.Location = new System.Drawing.Point(19, -4);
+            this.Loginlabel.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold);
+            this.Loginlabel.Location = new System.Drawing.Point(20, -3);
             this.Loginlabel.Name = "Loginlabel";
-            this.Loginlabel.Size = new System.Drawing.Size(82, 31);
+            this.Loginlabel.Size = new System.Drawing.Size(99, 32);
             this.Loginlabel.TabIndex = 0;
             this.Loginlabel.Text = "Log In";
             // 
@@ -104,7 +104,7 @@
             this.Logo.BackColor = System.Drawing.Color.Transparent;
             this.Logo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Logo.BackgroundImage")));
             this.Logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Logo.Location = new System.Drawing.Point(0, 0);
+            this.Logo.Location = new System.Drawing.Point(1, 1);
             this.Logo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Logo.Name = "Logo";
             this.Logo.Size = new System.Drawing.Size(24, 24);
@@ -194,7 +194,7 @@
             this.MinimizePanel.Name = "MinimizePanel";
             this.MinimizePanel.Size = new System.Drawing.Size(27, 29);
             this.MinimizePanel.TabIndex = 11;
-            this.MinimizePanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Submit_Click);
+            this.MinimizePanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Minimize_Click);
             this.MinimizePanel.MouseLeave += new System.EventHandler(this.Minimize_Leave);
             this.MinimizePanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Minimize_Hover);
             // 

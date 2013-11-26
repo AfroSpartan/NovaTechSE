@@ -96,6 +96,7 @@
             this.AddressLine2Label = new GEM_Label_Database.MouseTransparentLabel();
             this.AddressLine1Label = new GEM_Label_Database.MouseTransparentLabel();
             this.CustomerNameLabel = new GEM_Label_Database.MouseTransparentLabel();
+            this.GEMCodeList = new System.Windows.Forms.ComboBox();
             this.EditPanel.SuspendLayout();
             this.PrintPanel.SuspendLayout();
             this.PrintAllPanel.SuspendLayout();
@@ -106,188 +107,188 @@
             // 
             // CustomerName
             // 
-            this.CustomerName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.CustomerName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.CustomerName.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustomerName.Location = new System.Drawing.Point(113, 91);
+            this.CustomerName.Location = new System.Drawing.Point(113, 88);
             this.CustomerName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.CustomerName.Name = "CustomerName";
             this.CustomerName.ReadOnly = true;
-            this.CustomerName.Size = new System.Drawing.Size(156, 13);
+            this.CustomerName.Size = new System.Drawing.Size(220, 20);
             this.CustomerName.TabIndex = 0;
             this.CustomerName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Key_Down);
             this.CustomerName.LostFocus += new System.EventHandler(this.Lost_Focus);
             // 
             // Postcode
             // 
-            this.Postcode.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Postcode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Postcode.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Postcode.Location = new System.Drawing.Point(113, 273);
+            this.Postcode.Location = new System.Drawing.Point(113, 270);
             this.Postcode.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Postcode.Name = "Postcode";
             this.Postcode.ReadOnly = true;
-            this.Postcode.Size = new System.Drawing.Size(98, 13);
+            this.Postcode.Size = new System.Drawing.Size(98, 20);
             this.Postcode.TabIndex = 7;
             this.Postcode.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Key_Down);
             this.Postcode.LostFocus += new System.EventHandler(this.Lost_Focus);
             // 
             // AddressLine3
             // 
-            this.AddressLine3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.AddressLine3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.AddressLine3.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddressLine3.Location = new System.Drawing.Point(113, 169);
+            this.AddressLine3.Location = new System.Drawing.Point(113, 166);
             this.AddressLine3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.AddressLine3.Name = "AddressLine3";
             this.AddressLine3.ReadOnly = true;
-            this.AddressLine3.Size = new System.Drawing.Size(156, 13);
+            this.AddressLine3.Size = new System.Drawing.Size(220, 20);
             this.AddressLine3.TabIndex = 3;
             this.AddressLine3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Key_Down);
             this.AddressLine3.LostFocus += new System.EventHandler(this.Lost_Focus);
             // 
             // AddressLine2
             // 
-            this.AddressLine2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.AddressLine2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.AddressLine2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddressLine2.Location = new System.Drawing.Point(113, 143);
+            this.AddressLine2.Location = new System.Drawing.Point(113, 140);
             this.AddressLine2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.AddressLine2.Name = "AddressLine2";
             this.AddressLine2.ReadOnly = true;
-            this.AddressLine2.Size = new System.Drawing.Size(156, 13);
+            this.AddressLine2.Size = new System.Drawing.Size(220, 20);
             this.AddressLine2.TabIndex = 2;
             this.AddressLine2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Key_Down);
             this.AddressLine2.LostFocus += new System.EventHandler(this.Lost_Focus);
             // 
             // AddressLine1
             // 
-            this.AddressLine1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.AddressLine1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.AddressLine1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddressLine1.Location = new System.Drawing.Point(113, 117);
+            this.AddressLine1.Location = new System.Drawing.Point(113, 114);
             this.AddressLine1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.AddressLine1.Name = "AddressLine1";
             this.AddressLine1.ReadOnly = true;
-            this.AddressLine1.Size = new System.Drawing.Size(156, 13);
+            this.AddressLine1.Size = new System.Drawing.Size(220, 20);
             this.AddressLine1.TabIndex = 1;
             this.AddressLine1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Key_Down);
             this.AddressLine1.LostFocus += new System.EventHandler(this.Lost_Focus);
             // 
             // OrderID
             // 
-            this.OrderID.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.OrderID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.OrderID.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OrderID.Location = new System.Drawing.Point(480, 52);
+            this.OrderID.Location = new System.Drawing.Point(480, 50);
             this.OrderID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.OrderID.Name = "OrderID";
             this.OrderID.ReadOnly = true;
-            this.OrderID.Size = new System.Drawing.Size(156, 13);
+            this.OrderID.Size = new System.Drawing.Size(156, 20);
             this.OrderID.TabIndex = 9;
             this.OrderID.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Key_Down);
             // 
             // ProductDesc
             // 
-            this.ProductDesc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ProductDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ProductDesc.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProductDesc.Location = new System.Drawing.Point(480, 110);
+            this.ProductDesc.Location = new System.Drawing.Point(480, 106);
             this.ProductDesc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ProductDesc.Name = "ProductDesc";
             this.ProductDesc.ReadOnly = true;
-            this.ProductDesc.Size = new System.Drawing.Size(156, 13);
+            this.ProductDesc.Size = new System.Drawing.Size(156, 20);
             this.ProductDesc.TabIndex = 10;
             this.ProductDesc.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Key_Down);
             // 
             // GemCode
             // 
-            this.GemCode.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.GemCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.GemCode.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GemCode.Location = new System.Drawing.Point(480, 138);
+            this.GemCode.Location = new System.Drawing.Point(480, 134);
             this.GemCode.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.GemCode.Name = "GemCode";
             this.GemCode.ReadOnly = true;
-            this.GemCode.Size = new System.Drawing.Size(156, 13);
+            this.GemCode.Size = new System.Drawing.Size(156, 20);
             this.GemCode.TabIndex = 11;
             this.GemCode.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Key_Down);
             // 
             // Weight
             // 
-            this.Weight.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Weight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Weight.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Weight.Location = new System.Drawing.Point(480, 229);
+            this.Weight.Location = new System.Drawing.Point(480, 225);
             this.Weight.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Weight.Name = "Weight";
             this.Weight.ReadOnly = true;
-            this.Weight.Size = new System.Drawing.Size(156, 13);
+            this.Weight.Size = new System.Drawing.Size(156, 20);
             this.Weight.TabIndex = 13;
             this.Weight.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Key_Down);
             // 
             // ServiceLevel
             // 
-            this.ServiceLevel.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ServiceLevel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ServiceLevel.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ServiceLevel.Location = new System.Drawing.Point(480, 255);
+            this.ServiceLevel.Location = new System.Drawing.Point(480, 251);
             this.ServiceLevel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ServiceLevel.Name = "ServiceLevel";
             this.ServiceLevel.ReadOnly = true;
-            this.ServiceLevel.Size = new System.Drawing.Size(156, 13);
+            this.ServiceLevel.Size = new System.Drawing.Size(156, 20);
             this.ServiceLevel.TabIndex = 14;
             this.ServiceLevel.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Key_Down);
             // 
             // Price
             // 
-            this.Price.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Price.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Price.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Price.Location = new System.Drawing.Point(480, 281);
+            this.Price.Location = new System.Drawing.Point(480, 277);
             this.Price.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Price.Name = "Price";
             this.Price.ReadOnly = true;
-            this.Price.Size = new System.Drawing.Size(156, 13);
+            this.Price.Size = new System.Drawing.Size(156, 20);
             this.Price.TabIndex = 15;
             this.Price.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Key_Down);
             // 
             // QtShip
             // 
-            this.QtShip.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.QtShip.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.QtShip.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.QtShip.Location = new System.Drawing.Point(480, 164);
+            this.QtShip.Location = new System.Drawing.Point(480, 160);
             this.QtShip.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.QtShip.Name = "QtShip";
             this.QtShip.ReadOnly = true;
-            this.QtShip.Size = new System.Drawing.Size(28, 13);
+            this.QtShip.Size = new System.Drawing.Size(28, 20);
             this.QtShip.TabIndex = 12;
             this.QtShip.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Key_Down);
             // 
             // City
             // 
-            this.City.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.City.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.City.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.City.Location = new System.Drawing.Point(113, 195);
+            this.City.Location = new System.Drawing.Point(113, 192);
             this.City.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.City.Name = "City";
             this.City.ReadOnly = true;
-            this.City.Size = new System.Drawing.Size(156, 13);
+            this.City.Size = new System.Drawing.Size(220, 20);
             this.City.TabIndex = 4;
             this.City.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Key_Down);
             this.City.LostFocus += new System.EventHandler(this.Lost_Focus);
             // 
             // StateCounty
             // 
-            this.StateCounty.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.StateCounty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.StateCounty.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StateCounty.Location = new System.Drawing.Point(113, 221);
+            this.StateCounty.Location = new System.Drawing.Point(113, 218);
             this.StateCounty.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.StateCounty.Name = "StateCounty";
             this.StateCounty.ReadOnly = true;
-            this.StateCounty.Size = new System.Drawing.Size(156, 13);
+            this.StateCounty.Size = new System.Drawing.Size(220, 20);
             this.StateCounty.TabIndex = 5;
             this.StateCounty.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Key_Down);
             this.StateCounty.LostFocus += new System.EventHandler(this.Lost_Focus);
             // 
             // Country
             // 
-            this.Country.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Country.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Country.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Country.Location = new System.Drawing.Point(113, 247);
+            this.Country.Location = new System.Drawing.Point(113, 244);
             this.Country.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Country.Name = "Country";
             this.Country.ReadOnly = true;
-            this.Country.Size = new System.Drawing.Size(156, 13);
+            this.Country.Size = new System.Drawing.Size(220, 20);
             this.Country.TabIndex = 6;
             this.Country.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Key_Down);
             this.Country.LostFocus += new System.EventHandler(this.Lost_Focus);
@@ -297,7 +298,7 @@
             this.NextPanel.BackColor = System.Drawing.Color.Transparent;
             this.NextPanel.BackgroundImage = global::GEM_Label_Database.Properties.Resources.Right_Arrow;
             this.NextPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.NextPanel.Location = new System.Drawing.Point(561, 301);
+            this.NextPanel.Location = new System.Drawing.Point(561, 306);
             this.NextPanel.Name = "NextPanel";
             this.NextPanel.Size = new System.Drawing.Size(66, 22);
             this.NextPanel.TabIndex = 17;
@@ -311,7 +312,7 @@
             this.PrevPanel.BackColor = System.Drawing.Color.Transparent;
             this.PrevPanel.BackgroundImage = global::GEM_Label_Database.Properties.Resources.Left_Arrow;
             this.PrevPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PrevPanel.Location = new System.Drawing.Point(485, 301);
+            this.PrevPanel.Location = new System.Drawing.Point(485, 306);
             this.PrevPanel.Name = "PrevPanel";
             this.PrevPanel.Size = new System.Drawing.Size(66, 22);
             this.PrevPanel.TabIndex = 16;
@@ -554,11 +555,14 @@
             this.SearchCategory.FormattingEnabled = true;
             this.SearchCategory.Items.AddRange(new object[] {
             "Customer Name",
-            "Order ID"});
+            "Order ID",
+            "GEM Code"});
             this.SearchCategory.Location = new System.Drawing.Point(310, 352);
             this.SearchCategory.Name = "SearchCategory";
             this.SearchCategory.Size = new System.Drawing.Size(121, 21);
             this.SearchCategory.TabIndex = 30;
+            this.SearchCategory.Text = "Customer Name";
+            this.SearchCategory.TextChanged += new System.EventHandler(this.Search_Category_Update);
             // 
             // Search
             // 
@@ -650,10 +654,10 @@
             // LabelPreview
             // 
             this.LabelPreview.AutoSize = true;
-            this.LabelPreview.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelPreview.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelPreview.Location = new System.Drawing.Point(25, 295);
             this.LabelPreview.Name = "LabelPreview";
-            this.LabelPreview.Size = new System.Drawing.Size(116, 23);
+            this.LabelPreview.Size = new System.Drawing.Size(129, 22);
             this.LabelPreview.TabIndex = 0;
             this.LabelPreview.Text = "Label Preview";
             // 
@@ -670,182 +674,191 @@
             // PriceLabel
             // 
             this.PriceLabel.AutoSize = true;
-            this.PriceLabel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PriceLabel.Location = new System.Drawing.Point(444, 281);
+            this.PriceLabel.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PriceLabel.Location = new System.Drawing.Point(436, 281);
             this.PriceLabel.Name = "PriceLabel";
-            this.PriceLabel.Size = new System.Drawing.Size(31, 13);
+            this.PriceLabel.Size = new System.Drawing.Size(38, 14);
             this.PriceLabel.TabIndex = 0;
-            this.PriceLabel.Text = "Price";
+            this.PriceLabel.Text = "Price:";
             // 
             // ServiceLevelLabel
             // 
             this.ServiceLevelLabel.AutoSize = true;
-            this.ServiceLevelLabel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ServiceLevelLabel.Location = new System.Drawing.Point(407, 255);
+            this.ServiceLevelLabel.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ServiceLevelLabel.Location = new System.Drawing.Point(390, 255);
             this.ServiceLevelLabel.Name = "ServiceLevelLabel";
-            this.ServiceLevelLabel.Size = new System.Drawing.Size(68, 13);
+            this.ServiceLevelLabel.Size = new System.Drawing.Size(84, 14);
             this.ServiceLevelLabel.TabIndex = 0;
-            this.ServiceLevelLabel.Text = "Service Level";
+            this.ServiceLevelLabel.Text = "Service Level:";
             // 
             // WeightLabel
             // 
             this.WeightLabel.AutoSize = true;
-            this.WeightLabel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WeightLabel.Location = new System.Drawing.Point(395, 229);
+            this.WeightLabel.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WeightLabel.Location = new System.Drawing.Point(378, 229);
             this.WeightLabel.Name = "WeightLabel";
-            this.WeightLabel.Size = new System.Drawing.Size(80, 13);
+            this.WeightLabel.Size = new System.Drawing.Size(96, 14);
             this.WeightLabel.TabIndex = 0;
-            this.WeightLabel.Text = "Weight (Grams)";
+            this.WeightLabel.Text = "Weight (Grams):";
             // 
             // DeliveryLabel
             // 
             this.DeliveryLabel.AutoSize = true;
-            this.DeliveryLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeliveryLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DeliveryLabel.Location = new System.Drawing.Point(428, 195);
             this.DeliveryLabel.Name = "DeliveryLabel";
-            this.DeliveryLabel.Size = new System.Drawing.Size(73, 23);
+            this.DeliveryLabel.Size = new System.Drawing.Size(78, 22);
             this.DeliveryLabel.TabIndex = 0;
             this.DeliveryLabel.Text = "Delivery";
             // 
             // QtToShipLabel
             // 
             this.QtToShipLabel.AutoSize = true;
-            this.QtToShipLabel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.QtToShipLabel.Location = new System.Drawing.Point(420, 164);
+            this.QtToShipLabel.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QtToShipLabel.Location = new System.Drawing.Point(406, 164);
             this.QtToShipLabel.Name = "QtToShipLabel";
-            this.QtToShipLabel.Size = new System.Drawing.Size(55, 13);
+            this.QtToShipLabel.Size = new System.Drawing.Size(68, 14);
             this.QtToShipLabel.TabIndex = 0;
-            this.QtToShipLabel.Text = "Qt. To Ship";
+            this.QtToShipLabel.Text = "Qt. To Ship:";
             // 
             // GemCodeLabel
             // 
             this.GemCodeLabel.AutoSize = true;
-            this.GemCodeLabel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GemCodeLabel.Location = new System.Drawing.Point(420, 139);
+            this.GemCodeLabel.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GemCodeLabel.Location = new System.Drawing.Point(406, 138);
             this.GemCodeLabel.Name = "GemCodeLabel";
-            this.GemCodeLabel.Size = new System.Drawing.Size(55, 13);
+            this.GemCodeLabel.Size = new System.Drawing.Size(68, 14);
             this.GemCodeLabel.TabIndex = 0;
-            this.GemCodeLabel.Text = "Gem Code";
+            this.GemCodeLabel.Text = "Gem Code:";
             // 
             // ProductDescriptionLabel
             // 
             this.ProductDescriptionLabel.AutoSize = true;
-            this.ProductDescriptionLabel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProductDescriptionLabel.Location = new System.Drawing.Point(375, 110);
+            this.ProductDescriptionLabel.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductDescriptionLabel.Location = new System.Drawing.Point(355, 110);
             this.ProductDescriptionLabel.Name = "ProductDescriptionLabel";
-            this.ProductDescriptionLabel.Size = new System.Drawing.Size(100, 13);
+            this.ProductDescriptionLabel.Size = new System.Drawing.Size(119, 14);
             this.ProductDescriptionLabel.TabIndex = 0;
-            this.ProductDescriptionLabel.Text = "Product Description";
+            this.ProductDescriptionLabel.Text = "Product Description:";
             // 
             // ProductDetailsLabel
             // 
             this.ProductDetailsLabel.AutoSize = true;
-            this.ProductDetailsLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductDetailsLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProductDetailsLabel.Location = new System.Drawing.Point(374, 79);
             this.ProductDetailsLabel.Name = "ProductDetailsLabel";
-            this.ProductDetailsLabel.Size = new System.Drawing.Size(127, 23);
+            this.ProductDetailsLabel.Size = new System.Drawing.Size(139, 22);
             this.ProductDetailsLabel.TabIndex = 0;
             this.ProductDetailsLabel.Text = "Product Details";
             // 
             // OrderIDLabel
             // 
             this.OrderIDLabel.AutoSize = true;
-            this.OrderIDLabel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OrderIDLabel.Location = new System.Drawing.Point(429, 52);
+            this.OrderIDLabel.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OrderIDLabel.Location = new System.Drawing.Point(419, 54);
             this.OrderIDLabel.Name = "OrderIDLabel";
-            this.OrderIDLabel.Size = new System.Drawing.Size(46, 13);
+            this.OrderIDLabel.Size = new System.Drawing.Size(55, 14);
             this.OrderIDLabel.TabIndex = 0;
-            this.OrderIDLabel.Text = "Order ID";
+            this.OrderIDLabel.Text = "Order ID:";
             // 
             // CustomerDetailsLabel
             // 
             this.CustomerDetailsLabel.AutoSize = true;
-            this.CustomerDetailsLabel.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustomerDetailsLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CustomerDetailsLabel.Location = new System.Drawing.Point(26, 52);
             this.CustomerDetailsLabel.Name = "CustomerDetailsLabel";
-            this.CustomerDetailsLabel.Size = new System.Drawing.Size(141, 23);
+            this.CustomerDetailsLabel.Size = new System.Drawing.Size(156, 22);
             this.CustomerDetailsLabel.TabIndex = 0;
             this.CustomerDetailsLabel.Text = "Customer Details";
             // 
             // PostcodeLabel
             // 
             this.PostcodeLabel.AutoSize = true;
-            this.PostcodeLabel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PostcodeLabel.Location = new System.Drawing.Point(57, 273);
+            this.PostcodeLabel.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PostcodeLabel.Location = new System.Drawing.Point(46, 273);
             this.PostcodeLabel.Name = "PostcodeLabel";
-            this.PostcodeLabel.Size = new System.Drawing.Size(51, 13);
+            this.PostcodeLabel.Size = new System.Drawing.Size(62, 14);
             this.PostcodeLabel.TabIndex = 0;
-            this.PostcodeLabel.Text = "Postcode";
+            this.PostcodeLabel.Text = "Postcode:";
             // 
             // CountryLabel
             // 
             this.CountryLabel.AutoSize = true;
-            this.CountryLabel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CountryLabel.Location = new System.Drawing.Point(64, 247);
+            this.CountryLabel.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CountryLabel.Location = new System.Drawing.Point(53, 247);
             this.CountryLabel.Name = "CountryLabel";
-            this.CountryLabel.Size = new System.Drawing.Size(44, 13);
+            this.CountryLabel.Size = new System.Drawing.Size(54, 14);
             this.CountryLabel.TabIndex = 0;
-            this.CountryLabel.Text = "Country";
+            this.CountryLabel.Text = "Country:";
             // 
             // StateCountyLabel
             // 
             this.StateCountyLabel.AutoSize = true;
-            this.StateCountyLabel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StateCountyLabel.Location = new System.Drawing.Point(39, 221);
+            this.StateCountyLabel.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StateCountyLabel.Location = new System.Drawing.Point(28, 221);
             this.StateCountyLabel.Name = "StateCountyLabel";
-            this.StateCountyLabel.Size = new System.Drawing.Size(69, 13);
+            this.StateCountyLabel.Size = new System.Drawing.Size(80, 14);
             this.StateCountyLabel.TabIndex = 0;
-            this.StateCountyLabel.Text = "State/County";
+            this.StateCountyLabel.Text = "State/County:";
             // 
             // CityLabel
             // 
             this.CityLabel.AutoSize = true;
-            this.CityLabel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CityLabel.Location = new System.Drawing.Point(83, 195);
+            this.CityLabel.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CityLabel.Location = new System.Drawing.Point(75, 195);
             this.CityLabel.Name = "CityLabel";
-            this.CityLabel.Size = new System.Drawing.Size(25, 13);
+            this.CityLabel.Size = new System.Drawing.Size(31, 14);
             this.CityLabel.TabIndex = 0;
-            this.CityLabel.Text = "City";
+            this.CityLabel.Text = "City:";
             // 
             // AddressLine3Label
             // 
             this.AddressLine3Label.AutoSize = true;
-            this.AddressLine3Label.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddressLine3Label.Location = new System.Drawing.Point(32, 169);
+            this.AddressLine3Label.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddressLine3Label.Location = new System.Drawing.Point(13, 169);
             this.AddressLine3Label.Name = "AddressLine3Label";
-            this.AddressLine3Label.Size = new System.Drawing.Size(75, 13);
+            this.AddressLine3Label.Size = new System.Drawing.Size(94, 14);
             this.AddressLine3Label.TabIndex = 0;
-            this.AddressLine3Label.Text = "Address Line 3";
+            this.AddressLine3Label.Text = "Address Line 3:";
             // 
             // AddressLine2Label
             // 
             this.AddressLine2Label.AutoSize = true;
-            this.AddressLine2Label.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddressLine2Label.Location = new System.Drawing.Point(33, 143);
+            this.AddressLine2Label.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddressLine2Label.Location = new System.Drawing.Point(14, 143);
             this.AddressLine2Label.Name = "AddressLine2Label";
-            this.AddressLine2Label.Size = new System.Drawing.Size(75, 13);
+            this.AddressLine2Label.Size = new System.Drawing.Size(94, 14);
             this.AddressLine2Label.TabIndex = 0;
-            this.AddressLine2Label.Text = "Address Line 2";
+            this.AddressLine2Label.Text = "Address Line 2:";
             // 
             // AddressLine1Label
             // 
             this.AddressLine1Label.AutoSize = true;
-            this.AddressLine1Label.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddressLine1Label.Location = new System.Drawing.Point(32, 117);
+            this.AddressLine1Label.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddressLine1Label.Location = new System.Drawing.Point(13, 117);
             this.AddressLine1Label.Name = "AddressLine1Label";
-            this.AddressLine1Label.Size = new System.Drawing.Size(75, 13);
+            this.AddressLine1Label.Size = new System.Drawing.Size(94, 14);
             this.AddressLine1Label.TabIndex = 0;
-            this.AddressLine1Label.Text = "Address Line 1";
+            this.AddressLine1Label.Text = "Address Line 1:";
             // 
             // CustomerNameLabel
             // 
             this.CustomerNameLabel.AutoSize = true;
-            this.CustomerNameLabel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustomerNameLabel.Location = new System.Drawing.Point(25, 91);
+            this.CustomerNameLabel.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustomerNameLabel.Location = new System.Drawing.Point(6, 91);
             this.CustomerNameLabel.Name = "CustomerNameLabel";
-            this.CustomerNameLabel.Size = new System.Drawing.Size(83, 13);
+            this.CustomerNameLabel.Size = new System.Drawing.Size(100, 14);
             this.CustomerNameLabel.TabIndex = 0;
-            this.CustomerNameLabel.Text = "Customer Name";
+            this.CustomerNameLabel.Text = "Customer Name:";
+            // 
+            // GEMCodeList
+            // 
+            this.GEMCodeList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.GEMCodeList.FormattingEnabled = true;
+            this.GEMCodeList.Location = new System.Drawing.Point(437, 352);
+            this.GEMCodeList.Name = "GEMCodeList";
+            this.GEMCodeList.Size = new System.Drawing.Size(121, 21);
+            this.GEMCodeList.TabIndex = 30;
             // 
             // PrintWindow
             // 
@@ -855,6 +868,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(648, 494);
             this.Controls.Add(this.Search);
+            this.Controls.Add(this.GEMCodeList);
             this.Controls.Add(this.SearchCategory);
             this.Controls.Add(this.BlackBorderPanel);
             this.Controls.Add(this.NextPanel);
@@ -998,6 +1012,7 @@
         private System.Windows.Forms.TextBox Search;
         private System.Windows.Forms.Panel SearchPanel;
         private MouseTransparentLabel SearchLabel;
+        private System.Windows.Forms.ComboBox GEMCodeList;
 
     }
 }

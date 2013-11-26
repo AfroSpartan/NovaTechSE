@@ -42,12 +42,12 @@
             this.ClosePanel = new System.Windows.Forms.Panel();
             this.HSplitter = new GEM_Label_Database.MouseTransparentPanel();
             this.MinimizePanel = new System.Windows.Forms.Panel();
-            this.MaximizePanel = new System.Windows.Forms.Panel();
             this.Logo = new GEM_Label_Database.MouseTransparentPanel();
             this.SelectFilePanel = new System.Windows.Forms.Panel();
             this.SelectFileLabel = new GEM_Label_Database.MouseTransparentLabel();
             this.ExportPanel = new System.Windows.Forms.Panel();
             this.ExportLabel = new GEM_Label_Database.MouseTransparentLabel();
+            this.MaximizePanel = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.ImportList)).BeginInit();
             this.Tables.SuspendLayout();
             this.ImportedTab.SuspendLayout();
@@ -63,7 +63,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(26, -1);
+            this.label1.Location = new System.Drawing.Point(26, -3);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(201, 32);
             this.label1.TabIndex = 0;
@@ -194,25 +194,12 @@
             this.MinimizePanel.MouseLeave += new System.EventHandler(this.Minimize_Leave);
             this.MinimizePanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Minimize_Hover);
             // 
-            // MaximizePanel
-            // 
-            this.MaximizePanel.BackgroundImage = global::GEM_Label_Database.Properties.Resources.Maximize_Button;
-            this.MaximizePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.MaximizePanel.Location = new System.Drawing.Point(757, -1);
-            this.MaximizePanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.MaximizePanel.Name = "MaximizePanel";
-            this.MaximizePanel.Size = new System.Drawing.Size(27, 27);
-            this.MaximizePanel.TabIndex = 0;
-            this.MaximizePanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Maximize_Click);
-            this.MaximizePanel.MouseLeave += new System.EventHandler(this.Maximize_Leave);
-            this.MaximizePanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Maximize_Hover);
-            // 
             // Logo
             // 
             this.Logo.BackColor = System.Drawing.Color.Transparent;
             this.Logo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Logo.BackgroundImage")));
             this.Logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Logo.Location = new System.Drawing.Point(4, 4);
+            this.Logo.Location = new System.Drawing.Point(2, 1);
             this.Logo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Logo.Name = "Logo";
             this.Logo.Size = new System.Drawing.Size(24, 22);
@@ -268,6 +255,19 @@
             this.ExportLabel.TabIndex = 0;
             this.ExportLabel.Text = "Edit";
             // 
+            // MaximizePanel
+            // 
+            this.MaximizePanel.BackgroundImage = global::GEM_Label_Database.Properties.Resources.Maximize_Button;
+            this.MaximizePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MaximizePanel.Location = new System.Drawing.Point(757, -1);
+            this.MaximizePanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MaximizePanel.Name = "MaximizePanel";
+            this.MaximizePanel.Size = new System.Drawing.Size(27, 27);
+            this.MaximizePanel.TabIndex = 0;
+            this.MaximizePanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Maximize_Click);
+            this.MaximizePanel.MouseLeave += new System.EventHandler(this.Maximize_Leave);
+            this.MaximizePanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Maximize_Hover);
+            // 
             // ImportWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -320,11 +320,11 @@
         private System.Windows.Forms.Panel ClosePanel;
         private MouseTransparentPanel HSplitter;
         private System.Windows.Forms.Panel MinimizePanel;
-        private System.Windows.Forms.Panel MaximizePanel;
         private MouseTransparentPanel Logo;
         private System.Windows.Forms.Panel SelectFilePanel;
         private MouseTransparentLabel SelectFileLabel;
         private System.Windows.Forms.Panel ExportPanel;
         private MouseTransparentLabel ExportLabel;
+        private System.Windows.Forms.Panel MaximizePanel;
     }
 }

@@ -55,7 +55,7 @@ namespace GEM_Label_Database
             ////t.Start();
             ////Thread.Sleep(5000);
             InitializeComponent();
-            //this.Draggable(true);
+            this.Draggable(true);
             ////t.Abort();
             //if (File.Exists("Accounts.txt") == false)
             //{
@@ -66,9 +66,9 @@ namespace GEM_Label_Database
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            MenuWindow InitMenu = new MenuWindow();
-            InitMenu.Show();
-            InitMenu.Activate();
+            //MenuWindow InitMenu = new MenuWindow();
+            //InitMenu.Show();
+            //InitMenu.Activate();
         }
 
         private void Cancel_Click_Color()

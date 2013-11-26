@@ -512,5 +512,15 @@ namespace GEM_Label_Database
         }
 
         #endregion
+
+        private void Maximize_Click(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Maximize_Hover(object sender, MouseEventArgs e)
+        {
+
+        }
     }
 }
